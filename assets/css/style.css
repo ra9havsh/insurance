@@ -98,7 +98,7 @@ section .section-line{
 
 #topban{
     width: 100%;
-    height: 650px;
+    height: 100vh;
     background: url("../img/insurance.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -192,42 +192,76 @@ section .section-line{
 
 /*-----------payment partner--------------*/
 
-#payment-partner .payment-box{
-    margin: auto;
+
+#payment-partner .col-lg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-#payment-partner .payment-box h1{
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-#payment-partner .payment-box .payment-img img{
+#payment-partner img {
     width: 80%;
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 20px 0;
+    cursor: pointer;
 }
 
-#payment-partner .payment-box .payment-img .ime-img{
-    padding-top: 10px;
+#payment-partner img:hover {
+    -webkit-filter: none;
+    filter: none;
+    transform: scale(1.1);
 }
 
-#payment-partner .payment-box .payment-img .nabil-img{
-    padding-top: 16px;
+@media (max-width: 768px) {
+    #payment-partner img {
+        width: 40%; 
+    }
+}
+
+@media (max-width: 575px) {
+    #payment-partner img {
+        width: 30%;
+    }
 }
 
 /*-----------Footer--------------*/
 
 #footer{
-    background: #f5f2f2;
+    background: #e8e8e8;
     padding-top: 20px;
     margin-top: 20px;
     color: black;
     font-size: 16px;
 }
 
+#footer .footer-top{
+    padding-bottom: 20px;
+}
+
 #footer .footer-desc{
     font-size: 14px;
     text-align: justify;
     padding-bottom: 20px;
+}
+
+#footer .payment-box h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#footer .payment-box .payment-img img{
+    width: 80%;
+}
+
+#footer .payment-box .payment-img .ime-img{
+    padding-top: 10px;
+}
+
+#footer .payment-box .payment-img .nabil-img{
+    padding-top: 16px;
 }
 
 #footer .useful-links{
