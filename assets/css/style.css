@@ -1,0 +1,184 @@
+/*-----------section--------------*/
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section .section-title{
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+
+section .section-line{
+    background-color: black;
+    height: 2px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+/*-----------header--------------*/
+
+#header{
+    width: 100%;
+    position: fixed;
+    padding:30px 0;
+    text-align: center;
+    z-index: 999;
+    transition: all 0.5s;
+}
+
+#header.header-scrolled{
+    padding:10px 0;
+    background: #ea2b33d1;
+}
+
+#header .logo {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-right: auto;
+}
+  
+#header .logo a {
+color: #fff;
+text-decoration: none;
+}
+
+#header .logo .logo-color {
+color: #e80e0e;
+}
+
+#header .nav-menu li{    
+    padding: 10px 0 10px 24px;
+    position: relative;
+}
+
+#header .nav-menu a{
+    color: rgba(255, 255, 255);
+    position: relative;
+    transition: 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+#header ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    width: 0px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#header ul > li > a:hover:before, #header ul .active > a:before{
+    visibility: visible;
+    width: 100%;
+}
+
+#header .nav-menu .dropdown-menu a{
+    color: #2c4964;
+    padding: 10px;
+}
+
+#header .nav-menu .dropdown-menu a:hover{
+    color: #e80e0e;
+}
+ 
+
+/*-----------topban--------------*/
+
+#topban{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/insurance.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    padding-top: 0;
+}
+
+#topban .insurance-type-box{
+    height: 300px;
+    padding: 25px 10px;
+    cursor: pointer;
+}
+
+#topban .insurance-type-box .icon i{
+    color: #ff5e00;
+    font-size: 2em;
+    padding: 10px;
+}
+
+#topban .insurance-type-box:hover .icon i,#topban .insurance-type-box:hover a{
+    color: white;
+}
+
+#topban .insurance-car, #topban .insurance-bike{
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    padding: 35px 20px;
+    background-color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    align-items: center;
+}
+
+#topban .insurance-type-box:hover .insurance-car, #topban .insurance-type-box:hover .insurance-bike{
+    background-color: #ff5e00;
+}
+
+#topban .insurance-car a, #topban .insurance-bike a{
+    color: #1d456b;
+    text-decoration: none;
+}
+
+#topban .topban-info{
+    padding: 20px 30px;
+}
+
+#topban .topban-info h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+#topban .topban-info p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    color: white;
+}
+
+/*-----------aboutus--------------*/
+
+#aboutus{
+    overflow: hidden;
+}
+
+#aboutus .about-us-details h1{
+    font-size: 44px;
+    font-weight: 800;
+}
+
+#aboutus .read-more{
+    color: white;
+    background: #e80e0e;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
