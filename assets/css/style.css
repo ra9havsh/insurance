@@ -30,7 +30,7 @@ section .section-line{
 
 #header.header-scrolled{
     padding:10px 0;
-    background: #ea2b33d1;
+    background: #ea2b3361;
 }
 
 #header .logo {
@@ -44,12 +44,12 @@ section .section-line{
 }
   
 #header .logo a {
-color: #fff;
-text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 #header .logo .logo-color {
-color: #e80e0e;
+    color: #e80e0e;
 }
 
 #header .nav-menu li{    
@@ -182,3 +182,60 @@ color: #e80e0e;
     padding-right: 10px;
     outline: none;
 }
+
+
+/*-----------Footer--------------*/
+
+#footer{
+    background: #ca0303;
+    padding-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+#footer .footer-desc{
+    font-size: 14px;
+    text-align: justify;
+}
+
+#footer .links{
+    list-style: none;
+}
+
+#footer .links>li>a{
+    color: white;
+}
+
+#footer form input{
+    background: white;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    height: 35px;
+    text-indent: 5px;
+}
+
+#footer form button{
+    color: red;
+    background: white;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    width: 35px;
+    height: 35px;
+}
+
+#footer .copy-right{
+    padding: 5px;
+    background: white;
+    text-align: center;
+    color: black;
+}
+
+#footer .copy-right p{
+    margin: 2px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
