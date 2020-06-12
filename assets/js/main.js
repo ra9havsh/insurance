@@ -4,16 +4,25 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         console.log(scroll);
-        if (scroll > 100) {
-          $("#header").addClass('header-scrolled');
+        if (scroll > 50) {
+          $("#header").addClass('header-scrolled');          
+          $("#header .logo img").addClass('header-scrolled');
+          $("#header .nav-menu a").addClass('header-scrolled');
+          $("#header .logo img").attr('src','assets/img/merobeema1.png');
         }
         else{
           $("#header").removeClass('header-scrolled');  	
+          $("#header .logo img").removeClass('header-scrolled');
+          $("#header .nav-menu a").removeClass('header-scrolled');
+          $("#header .logo img").attr('src','assets/img/merobeema.png');
         }
     });
 
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 50) {
         $('#header').addClass('header-scrolled');
+        $("#header .logo img").addClass('header-scrolled');
+        $("#header .nav-menu a").addClass('header-scrolled');
+        $("#header .logo img").attr('src','assets/img/merobeema1.png');
     }
     
   });

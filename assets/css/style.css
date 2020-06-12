@@ -30,7 +30,8 @@ section .section-line{
 
 #header.header-scrolled{
     padding:10px 0;
-    background: #ea2b3361;
+    background: white;
+    box-shadow:  0 7px 2px -2px rgba(0,0,0,.2);
 }
 
 #header .logo {
@@ -47,6 +48,13 @@ section .section-line{
 #header .logo a {
     color: #fff;
     text-decoration: none;
+}
+
+#header .logo img {
+    max-height: 150px;
+}
+#header .logo img.header-scrolled {
+    max-height: 40px;
 }
 
 #header .logo .logo-color {
@@ -85,6 +93,11 @@ section .section-line{
     width: 100%;
 }
 
+#header .nav-menu a.header-scrolled{
+    color: #352929;
+}
+
+
 #header .nav-menu .dropdown-menu a{
     color: #2c4964;
     padding: 10px;
@@ -105,7 +118,7 @@ section .section-line{
     background-attachment: fixed;
     align-items: center;
     display: flex;
-    padding-top: 0;
+    padding-top: 100px;
 }
 
 #topban .insurance-type-box{
@@ -128,7 +141,7 @@ section .section-line{
     height: 100%;
     border-radius: 8px;
     text-align: center;
-    padding: 35px 20px;
+    padding: 70px 20px;
     background-color: white;
     font-size: 1.6em;
     font-weight: bold;
@@ -139,9 +152,8 @@ section .section-line{
     background-color: #ff5e00;
 }
 
-#topban .insurance-car a, #topban .insurance-bike a{
+#topban .insurance-car label, #topban .insurance-bike label{
     color: #1d456b;
-    text-decoration: none;
 }
 
 #topban .topban-info{
@@ -339,3 +351,41 @@ section .section-line{
     margin: 0;
 }
 
+/*--- popup ----*/
+
+#fill-popup{
+    padding: 20px 0;
+}
+
+#fill-popup .modal-content{
+    padding: 20px 0;
+    background-color: #bb0808;
+    color: white;
+}
+
+#fill-popup h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#fill-popup .close{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background: none;
+    color: white;
+}
+#fill-popup .close span{
+    color: white;
+}
+
+#fill-popup .submit{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
