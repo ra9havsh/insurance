@@ -34,6 +34,7 @@ section .section-line{
 }
 
 #header .logo {
+    font-family: 'Patua One', cursive;
     font-size: 36px;
     margin: 0;
     padding: 0;
@@ -171,6 +172,10 @@ section .section-line{
     font-weight: 800;
 }
 
+#aboutus .about-us-details p{
+    font-family: 'Roboto', sans-serif;
+}
+
 #aboutus .read-more{
     color: white;
     background: #e80e0e;
@@ -187,7 +192,11 @@ section .section-line{
 /*-----------aboutus--------------*/
 
 #work{
-    background: #f5f2f2;
+    background: #f5f2f2;   
+}
+
+#work h1, #work h2{
+    font-family: 'Oswald', sans-serif;
 }
 
 /*-----------payment partner--------------*/
@@ -264,6 +273,15 @@ section .section-line{
     padding-top: 16px;
 }
 
+#footer .subscribe{
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer .subscribe h2{
+    font-weight: 800;
+}
+
+
 #footer .useful-links{
     background: #06215d;
     color: white;
@@ -309,6 +327,7 @@ section .section-line{
 }
 
 #footer .copy-right p{
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
     margin: 0;
