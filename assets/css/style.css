@@ -161,6 +161,12 @@ section .section-line{
     color: white;
 }
 
+@media (max-width: 388px) {
+    #topban{
+        padding-top: 520px;
+    }
+}
+
 /*-----------aboutus--------------*/
 
 #aboutus{
