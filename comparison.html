@@ -24,31 +24,31 @@
 
 <body>
   <!-- ----- Header ----- -->
-  <header id="header">
+  <header id="header" class="header-scrolled">
     <div class="container-fluid justify-content-center">
       <div class="col-sm-11 d-flex justify-content-center">
         <!-- <h1 class="logo"><a href="index.html">Mero</a><a href="index.html" class="logo-color">Beema</a></h1> -->
-        <a href="index.html" class="logo mr-auto"><img src="assets/img/merobeema1.png" alt="" class="img-fluid"></a>
+        <a href="index.html" class="logo mr-auto"><img src="assets/img/merobeema1.png" alt="" class=" header-scrolled img-fluid"></a>
 
         <ul class="nav nav-menu">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+            <a class="nav-link header-scrolled" href="#">Home</a>
           </li>          
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link header-scrolled" href="#">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Insurance</a>
+            <a class="nav-link dropdown-toggle header-scrolled" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Insurance</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Car Insurance</a>
               <a class="dropdown-item" href="#">Bike Insurance</a>
             </div>
           </li>               
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact</a>
+            <a class="nav-link header-scrolled" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login&nbsp;<img src="assets/img/login-button.png" class="img-fluid"></a>
+            <a class="nav-link header-scrolled" href="#">Login&nbsp;<img src="assets/img/login-button.png" class="img-fluid"></a>
           </li>
         </ul>
       </div>
@@ -56,168 +56,143 @@
   </header><!-- End Header -->
 
   
-  <!-- ----- Topban ----- -->
-  <section id="topban" class="topban">
+  <!-- ----- Compareban ----- -->
+  <section id="compareban" class="conpareban">
     <div class="container-fluid">
-      <div class="row col-sm-12 d-flex justify-content-center">
-        <div class="row col-sm-12 col-md-12 col-lg-6 col-xl-6 order-lg-2 topban-info">
-          <h1>Protection Through Insurance</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-             dolore magna aliqua. 
-          </p>
+      <div class="row col-sm-12" style="padding: 0;">
+        <div class="col-sm-12 col-md-3 sidebar">
+          <div class="compare-options">
+            <div class="form-check ">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Basic Coverage</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Comprehensive Coverage</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Riots, Strike and Malicious damage</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Terrorism</label>
+            </div>
+          </div>
+
+          <div class="vehicle-details">
+            <h4>Car/Bike Insurance</h4>
+            <p>Coverage Included : Basic</p>
+            <p>Premium Amount : Rs. 1,000</p>
+            <p>Car/Bike Brand : brand</p>
+            <p>Car/Bike Model : Model</p>
+            <p>Car/Bike Variant : variant</p>
+            <p>Registration Date: 2005</p>
+          </div>
         </div>
-        <div class="row col-sm-12 col-md-12 col-lg-5 col-xl-5 order-lg-1">
-            <a href="#" class="col-sm-6 insurance-type-box" data-toggle="modal" data-target="#fill-popup">
-              <div class="insurance-car">
-                <div class="icon">
-                  <i class="fas fa-car-crash"></i>
+        <div class="col-sm-12 col-md-9 insurance-partner">
+            <div class="col-sm-3 ml-auto form-group">
+              <select class="form-control">
+                <option>Sort By</option>
+                <option>Company</option>
+                <option>Price</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/shikhar.png" alt="Test bus 3" style="height:100%;">
                 </div>
-                <label>Car Insurance</label>
-              </div>
-            </a>
-            
-            <a href="#" class="col-sm-6 insurance-type-box" data-toggle="modal" data-target="#fill-popup">
-              <div class="insurance-bike">
-                <div class="icon">
-                  <i class="fas fa-motorcycle"></i>
+                <h1>Shikhar Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>   
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/himalayan.png" alt="Test bus 3" style="height:100%;">
                 </div>
-                <label>Bike Insurance</label>
-              </div>
-            </a>
-            
+                <h1>Himalayan General Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>  
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/lumbini.png" alt="Test bus 3" style="height:100%;">
+                </div>
+                <h1>Lumbini Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>   
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/siddharta.jpg" alt="Test bus 3" style="height:100%;">
+                </div>
+                <h1>siddharta Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>     
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/united.png" alt="Test bus 3" style="height:100%;">
+                </div>
+                <h1>United Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>   
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/premier.png" alt="Test bus 3" style="height:100%;">
+                </div>
+                <h1>Premier Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>   
+            <div class="col-sm-6 col-md-4 col-lg-3 card-insurance">
+                <div class="insurance-image">
+                    <img src="assets/img/nb.png" alt="Test bus 3" style="height:100%;">
+                </div>
+                <h1>NB Insurance</h1>
+                <span><i class="fa fa-check" style="color: green;"></i>&nbsp;Third Party</span><br>
+                <span><i class="fa fa-times" style="color: red;"></i>&nbsp;First Party</span>
+                <h5>Royal Enfield</h5>
+                <h3>Royal Enfield Bullet</h3>            
+                <h2>Rs 1000</h2>
+                <a href="#" class="coverage_price">See Coverage Price</a>
+                <a class="btn btn-danger" href="#">Proceed</a>
+            </div>          
         </div>
       </div>
     </div>
   </section>
-
-  <!-- ----- About Us ----- -->
-  <section id="aboutus" class="aboutus">
-    <div class="section-title">
-        <h1>About Us</h1>
-        <div class="section-line"></div>
-    </div>
-
-    <div class="container-fluid justify-content-center">
-      <div class="col-sm-10 m-auto d-flex justify-content-center">
-        <div class="col-sm-12 col-lg-6 col-xl-6 about-us-details">
-          <h1>Fastest & Easy Way For Insurance</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-             dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-             dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-          </p>
-          <button class="read-more">Read More &gt;</button>
-        </div>
-        <div class="col-sm-12 col-lg-6 col-xl-6 ">
-          <img src="assets/img/about-us.jpg" width="100%" height="350px">
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- ----- Insurance working ----- -->
-    <section id="work" class="work">
-      <div class="section-title">
-          <h1>How It Works?</h1>
-          <!-- <div class="section-line"></div> -->
-      </div>
-  
-      <div class="container-fluid justify-content-center">
-        <div class="col-sm-10 m-auto d-flex justify-content-center align-items-center">
-          <div class="col-sm-12 col-lg-4 col-xl-4 text-center">
-            <h1>1.</h1>
-            <h2>Fill details</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. 
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 col-xl-4 text-center">
-            <h1>2.</h1>
-            <h2>Quote Terms&Condition</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. 
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 col-xl-4 text-center">
-            <h1>3.</h1>
-            <h2>Payment & Purchase</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- payment Partner -->
-  <section class="payment-partner" id="payment-partner">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
-        <h2>Insurance Partner</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client1.png" class="img-fluid" alt="" data-aos="zoom-in">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client4.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client7.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client8.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client9.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client10.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client11.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div class="col-lg-2 col-md-4 col-6">
-          <img src="assets/img/clients/client12.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- //payment partners -->
 
   <!-- ----- footer ----- -->
   <footer id="footer" class="footer">
@@ -392,11 +367,6 @@
   <!-- JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- 
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
