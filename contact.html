@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>InsurancePolicy-home</title>
+  <title>InsurancePolicy-comparison</title>
 
   <!-- Favicons -->
   <link href="#" rel="icon">
@@ -18,39 +18,51 @@
   <!-- CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/owlcarousel/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/vendor/owlcarousel/css/owl.theme.default.min.css">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    #footer{
+      background: white;
+      -webkit-box-shadow: 5px -2px 14px rgba(0, 0, 0, 0.45);
+      box-shadow: 5px -2px 14px rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    #footer form input{
+      border: 2px solid #8a8080;
+    }
+    #footer .useful-links{
+      background: #061353;
+    }
+  </style>  
 </head>
 
 <body>
   <!-- ----- Header ----- -->
-  <header id="header">
+  <header id="header" class="header-scrolled">
     <div class="container-fluid justify-content-center">
       <div class="col-sm-11 d-flex justify-content-center">
         <!-- <h1 class="logo"><a href="index.html">Mero</a><a href="index.html" class="logo-color">Beema</a></h1> -->
-        <a href="index.html" class="logo mr-auto"><img src="assets/img/merobeema.png" alt="" class="img-fluid"></a>
+        <a href="index.html" class="logo mr-auto"><img src="assets/img/merobeema1.png" alt="" class=" header-scrolled img-fluid"></a>
 
         <ul class="nav nav-menu">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item">
+            <a class="nav-link header-scrolled" href="index.html">Home</a>
           </li>          
           <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
+            <a class="nav-link header-scrolled" href="aboutus.html">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Insurance</a>
+            <a class="nav-link dropdown-toggle header-scrolled" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Insurance</a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Car Insurance</a>
               <a class="dropdown-item" href="#">Bike Insurance</a>
             </div>
           </li>               
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
+            <a class="nav-link header-scrolled" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Login&nbsp;<img src="assets/img/login-button.png" class="img-fluid"></a>
+            <a class="nav-link header-scrolled" href="login.html">Login&nbsp;<img src="assets/img/login-button.png" class="img-fluid"></a>
           </li>
         </ul>
       </div>
@@ -58,168 +70,62 @@
   </header><!-- End Header -->
 
   
-  <!-- ----- Topban ----- -->
-  <section id="topban" class="topban">
-    <div class="container-fluid">
-      <div class="row col-sm-12 d-flex justify-content-center">
-        <div class="row col-sm-12 col-md-12 col-lg-6 col-xl-6 order-lg-2 topban-info">
-          <h1>Protection Through Insurance</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-             dolore magna aliqua. 
-          </p>
+  <!-- ----- Compareban ----- -->
+  <section id="contactban" class="contactban">
+    <div class="row col-sm-12 contacttop">
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.4229157730842!2d85.30883718231415!3d27.703448813591844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1baaf254782b%3A0x34c5f218b530385b!2sBonjour%20nepal!5e0!3m2!1sen!2snp!4v1592124726168!5m2!1sen!2snp"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <div class="row col-sm-12 col-md-12 col-lg-5 col-xl-5 order-lg-1">
-            <a href="#" class="col-sm-6 insurance-type-box" data-toggle="modal" data-target="#fill-popup">
-              <div class="insurance-car">
-                <div class="icon">
-                  <i class="fas fa-car-crash"></i>
-                </div>
-                <label>Car Insurance</label>
-              </div>
-            </a>
-            
-            <a href="#" class="col-sm-6 insurance-type-box" data-toggle="modal" data-target="#fill-popup">
-              <div class="insurance-bike">
-                <div class="icon">
-                  <i class="fas fa-motorcycle"></i>
-                </div>
-                <label>Bike Insurance</label>
-              </div>
-            </a>
-            
+    </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center contact">
+      <div class="row col-sm-9 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-5 sidebar">
+            <div class="contact-details">
+                <h1>Contact Details</h1>
+                <label>Mobile : </label> 9384756122, 9583025361 <br>
+                <label>Phone : </label> 92830038, 18273643 <br><br><br>
+                <label><i><u>berobeema.com</u></i></label> <br>
+                <label><i><u>info@berobeema.com</u></i></label> <br>
+                <label>Hattisar Rd.</label> <br>
+                <label>Kathmandu, Nepal</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-7 contact-form">
+            <form>
+				<div class="col-sm-12 col-md-6 form-group">
+				  <label class="control-label" for="fname">First Name:</label>
+				  <div>          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+				<div class="col-sm-12 col-md-6 form-group">
+				  <label class="control-label" for="lname">Last Name:</label>
+				  <div class="">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				<div class="col-sm-12 form-group">
+				  <label class="control-label" for="email">Email:</label>
+				  <div class="">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+				<div class="col-sm-12  form-group">
+				  <label class="control-label" for="comment">Comment:</label>
+				  <div class="">
+					<textarea class="form-control" rows="3" id="comment"></textarea>
+				  </div>
+				</div>
+				<div class="col-sm-12 form-group">        
+				  <div class="col-sm-12 d-flex justify-content-center">
+					<button type="submit" class="btn btn-default">Submit</button>
+				  </div>
+				</div>
+			</form>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- ----- About Us ----- -->
-  <section id="aboutus" class="aboutus">
-    <div class="section-title">
-        <h1>About Us</h1>
-        <div class="section-line"></div>
-    </div>
-
-    <div class="container-fluid justify-content-center">
-      <div class="col-sm-10 m-auto d-flex justify-content-center">
-        <div class="col-sm-12 col-lg-6 col-xl-6 about-us-details">
-          <h1>Fastest & Easy Way For Insurance</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-             dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-             dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-          </p>
-          <button class="read-more">Read More &gt;</button>
-        </div>
-        <div class="col-sm-12 col-lg-6 col-xl-6 ">
-          <img src="assets/img/about-us.jpg" width="100%" height="350px">
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <!-- ----- Insurance working ----- -->
-    <section id="work" class="work">
-      <div class="section-title">
-          <h1>How It Works?</h1>
-          <!-- <div class="section-line"></div> -->
-      </div>
-  
-      <div class="container-fluid justify-content-center">
-        <div class="col-sm-10 m-auto d-flex justify-content-center align-items-center">
-          <div class="col-sm-12 col-lg-4 col-xl-4 text-center">
-            <h1>1.</h1>
-            <h2>Fill details</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. 
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 col-xl-4 text-center">
-            <h1>2.</h1>
-            <h2>Quote Terms&Condition</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. 
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 col-xl-4 text-center">
-            <h1>3.</h1>
-            <h2>Payment & Purchase</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore magna aliqua. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- payment Partner -->
-  <section class="payment-partner" id="payment-partner">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
-        <h2>Insurance Partner</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="row owl-carousel carousel owl-theme">
-
-        <div>
-          <img src="assets/img/clients/client1.png" class="img-fluid" alt="" data-aos="zoom-in">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client3.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client4.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client5.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client6.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client7.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client8.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client9.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client10.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client11.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-
-        <div>
-          <img src="assets/img/clients/client12.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!-- //payment partners -->
 
   <!-- ----- footer ----- -->
   <footer id="footer" class="footer">
@@ -382,7 +288,7 @@
               </div>
             </div>
             <div class="col-sm-12" style="text-align: center;">
-              <a href="comparison.html"><button type="button" class="submit">Submit</button></a>
+              <button class="submit">Submit</button>
             </div>
           </form>
         </div>
@@ -391,15 +297,9 @@
   </div>
 
   <!-- end footer-->
-
   <!-- JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/owlcarousel/js/owl.carousel.min.js"></script>
- 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

@@ -24,5 +24,23 @@ $(document).ready(function(){
         $("#header .nav-menu a").addClass('header-scrolled');
         $("#header .logo img").attr('src','assets/img/merobeema1.png');
     }
+
+    $(".carousel").owlCarousel({
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:2000,
+      smartSpeed: 1000, 
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+    });
     
   });
